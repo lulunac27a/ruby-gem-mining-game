@@ -5,13 +5,24 @@ class GemMiningGame
   # High weight modifier means that upgrade levels dramatically boost this gem's spawn rate
   GEM_TYPES = { #gem tiers with base values and weight modifiers
     "Coal" => { base_value: 1, weight_modifier: 0.0 },
+    "Copper" => { base_value: 3, weight_modifier: 0.1 },
     "Quartz" => { base_value: 5, weight_modifier: 0.2 },
+    "Silver" => { base_value: 10, weight_modifier: 0.3 },
     "Iron Ore" => { base_value: 20, weight_modifier: 0.5 },
+    "Platinum Ore" => { base_value: 50, weight_modifier: 0.8 },
     "Gold Ore" => { base_value: 100, weight_modifier: 1.0 },
+    "Sapphire" => { base_value: 250, weight_modifier: 1.5 },
     "Emerald" => { base_value: 500, weight_modifier: 1.8 },
+    "Topaz" => { base_value: 1000, weight_modifier: 2.2 },
     "Ruby" => { base_value: 2500, weight_modifier: 2.8 },
+    "Amethyst" => { base_value: 5000, weight_modifier: 3.5 },
     "Diamond" => { base_value: 12500, weight_modifier: 4.0 },
+    "Peridot" => { base_value: 30000, weight_modifier: 4.8 },
     "Obsidian" => { base_value: 75000, weight_modifier: 5.5 },
+    "Dragonstone" => { base_value: 150000, weight_modifier: 7.0 },
+    "Celestine" => { base_value: 300000, weight_modifier: 9.0 },
+    "Adamantite" => { base_value: 500000, weight_modifier: 10.5 },
+    "Ethereal" => { base_value: 1000000, weight_modifier: 12.0 },
   }
 
   def initialize #initialize game state
