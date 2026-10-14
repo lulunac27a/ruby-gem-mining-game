@@ -74,7 +74,7 @@ class GemMiningGame
         @total_mined += 1 #increment the total mined count
 
         puts "\n⛏️  [MINE] You swung your pickaxe and unearthed: #{gem_name}!"
-        puts "   Base value: $#{value} -> Level Multiplier applied! Earned: $#{final_value}"
+        puts "   Base value: $#{value} #{@upgrade_level > 1 ? "(-> Level Multiplier applied! Earned: $#{final_value})" : ""}"
         return
       end
     end
