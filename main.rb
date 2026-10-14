@@ -42,7 +42,7 @@ class GemMiningGame
     # Normalize weights into percentage probabilities for display
     total_weight = weights.values.sum #calculate the total weight of all gem types
     probabilities = {}
-    weights.each { |name, weight| probabilities[name] = ((weight / total_weight) * 100).round(2) } #convert weights to percentage probabilities
+    weights.each { |name, weight| probabilities[name] = ((weight / total_weight) * 100).round(15) } #convert weights to percentage probabilities
     probabilities
   end
 
